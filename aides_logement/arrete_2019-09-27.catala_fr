@@ -85,9 +85,7 @@ champ d'application CalculAidePersonnaliséeLogement:
   définition situation_familiale_calcul_apl égal à
     selon situation_familiale sous forme
     -- Célibataire : PersonneSeule
-    -- Mariés : Couple
-    -- Pacsés : Couple
-    -- Concubins : Couple
+    -- Mariés ou Pacsés ou Concubins : Couple
     -- CélibataireSéparéDeFait : PersonneSeule
     -- ConcubinageDontSéparéDeFait : Couple
 
@@ -95,9 +93,7 @@ champ d'application CalculAllocationLogement:
   définition situation_familiale_calcul_apl égal à
     selon situation_familiale sous forme
     -- Célibataire : PersonneSeule
-    -- Mariés : Couple
-    -- Pacsés : Couple
-    -- Concubins : Couple
+    -- Mariés ou Pacsés ou Concubins : Couple
     -- CélibataireSéparéDeFait : PersonneSeule
     -- ConcubinageDontSéparéDeFait : Couple
 ```
@@ -274,14 +270,12 @@ sous condition date_courante >= |2019-10-01|:
   définition plafond_dégressivité_d823_16 égal à
     selon zone sous forme
     -- Zone1 : plafond_loyer_d823_16_2 * 3,4
-    -- Zone2 : plafond_loyer_d823_16_2 * 2,5
-    -- Zone3 : plafond_loyer_d823_16_2 * 2,5
+    -- Zone2 ou Zone3 : plafond_loyer_d823_16_2 * 2,5
 
   définition plafond_suppression_d823_16 égal à
     selon zone sous forme
     -- Zone1 : plafond_loyer_d823_16_2 * 4,0
-    -- Zone2 : plafond_loyer_d823_16_2 * 3,1
-    -- Zone3 : plafond_loyer_d823_16_2 * 3,1
+    -- Zone2 ou Zone3 : plafond_loyer_d823_16_2 * 3,1
 ```
 
 ### Article 11 | LEGIARTI000039160747
@@ -310,8 +304,8 @@ sous condition date_courante >= |2019-10-01|:
   définition montant_minimal_aide_d823_16 égal à
     selon type_aide sous forme
     -- AidePersonnaliséeLogement : 0 €
-    -- TypeAidesPersonnelleLogement.AllocationLogementFamiliale : 10 €
-    -- TypeAidesPersonnelleLogement.AllocationLogementSociale : 10 €
+    -- TypeAidesPersonnelleLogement.AllocationLogementFamiliale
+    ou TypeAidesPersonnelleLogement.AllocationLogementSociale : 10 €
 ```
 
 ### Article 13 | LEGIARTI000052233857
@@ -5715,13 +5709,13 @@ sous condition date_courante >= |2025-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge = 1
@@ -5755,13 +5749,13 @@ sous condition date_courante >= |2025-10-01|:
   définition montant_forfaitaire_charges_d823_16
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -5773,13 +5767,13 @@ sous condition date_courante >= |2025-10-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -5791,13 +5785,13 @@ sous condition date_courante >= |2025-10-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -5829,13 +5823,13 @@ sous condition date_courante >= |2025-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et colocation
@@ -5854,13 +5848,13 @@ sous condition date_courante >= |2025-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et copropriété
@@ -5920,13 +5914,13 @@ sous condition date_courante >= |2025-10-01|:
   définition taux_composition_familiale
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à

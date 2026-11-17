@@ -1002,13 +1002,13 @@ sous condition date_courante >= |2024-10-01| et date_courante < |2025-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge = 1
@@ -1042,13 +1042,13 @@ sous condition date_courante >= |2024-10-01| et date_courante < |2025-01-01|:
   définition montant_forfaitaire_charges_d823_16
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -1060,13 +1060,13 @@ sous condition date_courante >= |2024-10-01| et date_courante < |2025-01-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -1078,13 +1078,13 @@ sous condition date_courante >= |2024-10-01| et date_courante < |2025-01-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -1116,13 +1116,13 @@ sous condition date_courante >= |2024-10-01| et date_courante < |2025-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et colocation
@@ -1141,13 +1141,13 @@ sous condition date_courante >= |2024-10-01| et date_courante < |2025-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et copropriété
@@ -1207,13 +1207,13 @@ sous condition date_courante >= |2024-10-01| et date_courante < |2025-01-01|:
   définition taux_composition_familiale
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -1337,13 +1337,13 @@ sous condition date_courante >= |2024-01-01| et date_courante < |2024-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge = 1
@@ -1377,13 +1377,13 @@ sous condition date_courante >= |2024-01-01| et date_courante < |2024-10-01|:
   définition montant_forfaitaire_charges_d823_16
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -1395,13 +1395,13 @@ sous condition date_courante >= |2024-01-01| et date_courante < |2024-10-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -1413,13 +1413,13 @@ sous condition date_courante >= |2024-01-01| et date_courante < |2024-10-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -1451,13 +1451,13 @@ sous condition date_courante >= |2024-01-01| et date_courante < |2024-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et colocation
@@ -1476,13 +1476,13 @@ sous condition date_courante >= |2024-01-01| et date_courante < |2024-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et copropriété
@@ -1542,13 +1542,13 @@ sous condition date_courante >= |2024-01-01| et date_courante < |2024-10-01|:
   définition taux_composition_familiale
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -1689,13 +1689,13 @@ sous condition date_courante >= |2023-10-01| et date_courante <= |2023-12-31|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge = 1
@@ -1729,13 +1729,13 @@ sous condition date_courante >= |2023-10-01| et date_courante <= |2023-12-31|:
   définition montant_forfaitaire_charges_d823_16
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -1747,13 +1747,13 @@ sous condition date_courante >= |2023-10-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -1765,13 +1765,13 @@ sous condition date_courante >= |2023-10-01| et date_courante <= |2023-12-31|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -1803,13 +1803,13 @@ sous condition date_courante >= |2023-10-01| et date_courante <= |2023-12-31|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et colocation
@@ -1828,13 +1828,13 @@ sous condition date_courante >= |2023-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et copropriété
@@ -1894,13 +1894,13 @@ sous condition date_courante >= |2023-10-01| et date_courante <= |2023-12-31|:
   définition taux_composition_familiale
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -1969,13 +1969,13 @@ sous condition date_courante >= |2023-01-01| et date_courante < |2023-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge = 1
@@ -2009,13 +2009,13 @@ sous condition date_courante >= |2023-01-01| et date_courante < |2023-10-01|:
   définition montant_forfaitaire_charges_d823_16
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -2027,13 +2027,13 @@ sous condition date_courante >= |2023-01-01| et date_courante < |2023-10-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -2045,13 +2045,13 @@ sous condition date_courante >= |2023-01-01| et date_courante < |2023-10-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -2083,13 +2083,13 @@ sous condition date_courante >= |2023-01-01| et date_courante < |2023-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et colocation
@@ -2108,13 +2108,13 @@ sous condition date_courante >= |2023-01-01| et date_courante < |2023-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et copropriété
@@ -2174,13 +2174,13 @@ sous condition date_courante >= |2023-01-01| et date_courante < |2023-10-01|:
   définition taux_composition_familiale
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -3146,13 +3146,13 @@ sous condition date_courante >= |2022-07-01| et date_courante < |2023-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -3199,13 +3199,13 @@ sous condition date_courante >= |2022-07-01| et date_courante < |2023-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -3219,13 +3219,13 @@ sous condition date_courante >= |2022-07-01| et date_courante < |2023-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -3245,13 +3245,13 @@ sous condition date_courante >= |2022-07-01| et date_courante < |2023-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -3270,13 +3270,13 @@ sous condition date_courante >= |2022-07-01| et date_courante < |2023-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -3296,13 +3296,13 @@ sous condition date_courante >= |2022-07-01| et date_courante < |2023-01-01|:
   sous condition
     nombre_personnes_à_charge >= 6
     et selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
   conséquence égal à
     calcul_plafond_mensualité_d842_6 de date_calcul, 6
@@ -3319,13 +3319,13 @@ sous condition date_courante >= |2022-07-01| et date_courante < |2023-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge = 1
@@ -3350,13 +3350,13 @@ sous condition date_courante >= |2022-07-01| et date_courante < |2023-01-01|:
   définition montant_forfaitaire_charges_d823_16
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -3374,13 +3374,13 @@ sous condition date_courante >= |2022-07-01| et date_courante < |2023-01-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -3398,13 +3398,13 @@ sous condition date_courante >= |2022-07-01| et date_courante < |2023-01-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -3435,13 +3435,13 @@ sous condition date_courante >= |2022-07-01| et date_courante < |2023-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Martinique : vrai
-      -- Guyane : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Martinique
+      ou Guyane
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et colocation
@@ -3471,13 +3471,13 @@ sous condition date_courante >= |2022-07-01| et date_courante < |2023-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et copropriété
@@ -3524,13 +3524,13 @@ sous condition date_courante >= |2022-07-01| et date_courante < |2023-01-01|:
   définition taux_composition_familiale
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -3848,13 +3848,13 @@ sous condition date_courante >= |2022-01-01| et date_courante < |2022-07-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -3900,13 +3900,13 @@ sous condition date_courante >= |2022-01-01| et date_courante < |2022-07-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -3920,13 +3920,13 @@ sous condition date_courante >= |2022-01-01| et date_courante < |2022-07-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -3946,13 +3946,13 @@ sous condition date_courante >= |2022-01-01| et date_courante < |2022-07-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -3972,13 +3972,13 @@ sous condition date_courante >= |2022-01-01| et date_courante < |2022-07-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -3998,13 +3998,13 @@ sous condition date_courante >= |2022-01-01| et date_courante < |2022-07-01|:
   sous condition
     nombre_personnes_à_charge >= 6
     et selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
   conséquence égal à
     calcul_plafond_mensualité_d842_6 de date_calcul, 6
@@ -4021,13 +4021,13 @@ sous condition date_courante >= |2022-01-01| et date_courante < |2022-07-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge = 1
@@ -4052,13 +4052,13 @@ sous condition date_courante >= |2022-01-01| et date_courante < |2022-07-01|:
   définition montant_forfaitaire_charges_d823_16
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -4076,13 +4076,13 @@ sous condition date_courante >= |2022-01-01| et date_courante < |2022-07-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -4100,13 +4100,13 @@ sous condition date_courante >= |2022-01-01| et date_courante < |2022-07-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -4137,13 +4137,13 @@ sous condition date_courante >= |2022-01-01| et date_courante < |2022-07-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Martinique : vrai
-      -- Guyane : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Martinique
+      ou Guyane
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et colocation
@@ -4173,13 +4173,13 @@ sous condition date_courante >= |2022-01-01| et date_courante < |2022-07-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et copropriété
@@ -4226,13 +4226,13 @@ sous condition date_courante >= |2022-01-01| et date_courante < |2022-07-01|:
   définition taux_composition_familiale
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -5116,13 +5116,13 @@ sous condition date_courante >= |2021-10-01| et date_courante < |2022-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -5168,13 +5168,13 @@ sous condition date_courante >= |2021-10-01| et date_courante < |2022-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -5188,13 +5188,13 @@ sous condition date_courante >= |2021-10-01| et date_courante < |2022-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -5214,13 +5214,13 @@ sous condition date_courante >= |2021-10-01| et date_courante < |2022-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -5239,13 +5239,13 @@ sous condition date_courante >= |2021-10-01| et date_courante < |2022-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -5265,13 +5265,13 @@ sous condition date_courante >= |2021-10-01| et date_courante < |2022-01-01|:
   sous condition
     nombre_personnes_à_charge >= 6
     et selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
   conséquence égal à
     calcul_plafond_mensualité_d842_6 de date_calcul, 6
@@ -5288,13 +5288,13 @@ sous condition date_courante >= |2021-10-01| et date_courante < |2022-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge = 1
@@ -5319,13 +5319,13 @@ sous condition date_courante >= |2021-10-01| et date_courante < |2022-01-01|:
   définition montant_forfaitaire_charges_d823_16
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -5343,13 +5343,13 @@ sous condition date_courante >= |2021-10-01| et date_courante < |2022-01-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -5367,13 +5367,13 @@ sous condition date_courante >= |2021-10-01| et date_courante < |2022-01-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -5404,13 +5404,13 @@ sous condition date_courante >= |2021-10-01| et date_courante < |2022-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Martinique : vrai
-      -- Guyane : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Martinique
+      ou Guyane
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et colocation
@@ -5440,13 +5440,13 @@ sous condition date_courante >= |2021-10-01| et date_courante < |2022-01-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et copropriété
@@ -5492,13 +5492,13 @@ sous condition date_courante >= |2021-10-01| et date_courante < |2022-01-01|:
   définition taux_composition_familiale
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -6348,13 +6348,13 @@ sous condition date_courante >= |2020-10-01| et date_courante < |2021-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -6401,13 +6401,13 @@ sous condition date_courante >= |2020-10-01| et date_courante < |2021-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -6421,13 +6421,13 @@ sous condition date_courante >= |2020-10-01| et date_courante < |2021-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -6447,13 +6447,13 @@ sous condition date_courante >= |2020-10-01| et date_courante < |2021-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -6472,13 +6472,13 @@ sous condition date_courante >= |2020-10-01| et date_courante < |2021-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -6498,13 +6498,13 @@ sous condition date_courante >= |2020-10-01| et date_courante < |2021-10-01|:
   sous condition
     nombre_personnes_à_charge >= 6
     et selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
   conséquence égal à
     calcul_plafond_mensualité_d842_6 de date_calcul, 6
@@ -6521,13 +6521,13 @@ sous condition date_courante >= |2020-10-01| et date_courante < |2021-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge = 1
@@ -6553,13 +6553,13 @@ sous condition date_courante >= |2020-10-01| et date_courante < |2021-10-01|:
   définition montant_forfaitaire_charges_d823_16
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -6577,13 +6577,13 @@ sous condition date_courante >= |2020-10-01| et date_courante < |2021-10-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -6601,13 +6601,13 @@ sous condition date_courante >= |2020-10-01| et date_courante < |2021-10-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -6638,13 +6638,13 @@ sous condition date_courante >= |2020-10-01| et date_courante < |2021-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et colocation
@@ -6674,13 +6674,13 @@ sous condition date_courante >= |2020-10-01| et date_courante < |2021-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et copropriété
@@ -6727,13 +6727,13 @@ sous condition date_courante >= |2020-10-01| et date_courante < |2021-10-01|:
   définition taux_composition_familiale
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -6969,13 +6969,13 @@ sous condition date_courante >= |2020-01-01| et date_courante < |2020-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -7022,13 +7022,13 @@ sous condition date_courante >= |2020-01-01| et date_courante < |2020-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -7042,13 +7042,13 @@ sous condition date_courante >= |2020-01-01| et date_courante < |2020-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -7068,13 +7068,13 @@ sous condition date_courante >= |2020-01-01| et date_courante < |2020-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -7094,13 +7094,13 @@ sous condition date_courante >= |2020-01-01| et date_courante < |2020-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge >= 6
@@ -7120,13 +7120,13 @@ sous condition date_courante >= |2020-01-01| et date_courante < |2020-10-01|:
   sous condition
     nombre_personnes_à_charge >= 6
     et selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
   conséquence égal à
     calcul_plafond_mensualité_d842_6 de date_calcul, 6
@@ -7143,13 +7143,13 @@ sous condition date_courante >= |2020-01-01| et date_courante < |2020-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge = 1
@@ -7175,13 +7175,13 @@ sous condition date_courante >= |2020-01-01| et date_courante < |2020-10-01|:
   définition montant_forfaitaire_charges_d823_16
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -7199,13 +7199,13 @@ sous condition date_courante >= |2020-01-01| et date_courante < |2020-10-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -7223,13 +7223,13 @@ sous condition date_courante >= |2020-01-01| et date_courante < |2020-10-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -7260,13 +7260,13 @@ sous condition date_courante >= |2020-01-01| et date_courante < |2020-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et colocation
@@ -7296,13 +7296,13 @@ sous condition date_courante >= |2020-01-01| et date_courante < |2020-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et copropriété
@@ -7349,13 +7349,13 @@ sous condition date_courante >= |2020-01-01| et date_courante < |2020-10-01|:
   définition taux_composition_familiale
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -8477,13 +8477,13 @@ sous condition date_courante >= |2025-01-01| et date_courante < |2025-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et nombre_personnes_à_charge = 1
@@ -8517,13 +8517,13 @@ sous condition date_courante >= |2025-01-01| et date_courante < |2025-10-01|:
   définition montant_forfaitaire_charges_d823_16
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -8535,13 +8535,13 @@ sous condition date_courante >= |2025-01-01| et date_courante < |2025-10-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -8553,13 +8553,13 @@ sous condition date_courante >= |2025-01-01| et date_courante < |2025-10-01|:
   définition montant_forfaitaire_charges
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -8591,13 +8591,13 @@ sous condition date_courante >= |2025-01-01| et date_courante < |2025-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et colocation
@@ -8616,13 +8616,13 @@ sous condition date_courante >= |2025-01-01| et date_courante < |2025-10-01|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- Guadeloupe
+      ou Guyane
+      ou Martinique
+      ou LaRéunion
+      ou Mayotte
+      ou SaintBarthélemy
+      ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et copropriété
@@ -8682,13 +8682,13 @@ sous condition date_courante >= |2025-01-01| et date_courante < |2025-10-01|:
   définition taux_composition_familiale
   sous condition (
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- Guadeloupe
+    ou Guyane
+    ou Martinique
+    ou LaRéunion
+    ou Mayotte
+    ou SaintBarthélemy
+    ou SaintMartin : vrai
     -- n'importe quel : faux
   )
   conséquence égal à

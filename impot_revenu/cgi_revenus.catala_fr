@@ -1047,8 +1047,8 @@ champ d'application BénéficesIndustrielsCommerciauxDéclarant:
   égal à
     liste de revenu_exceptionnel_ou_différé parmi revenus.non_professionnels.généraux.revenus_exceptionnels_ou_différés
       tel que selon revenu_exceptionnel_ou_différé.catégorie sous forme
-      -- MicroBénéficesIndustrielsCommerciauxServices : vrai
-      -- MicroBénéficesIndustrielsCommerciauxLocationsMeubléesGénéral : vrai
+      -- MicroBénéficesIndustrielsCommerciauxServices
+      ou MicroBénéficesIndustrielsCommerciauxLocationsMeubléesGénéral : vrai
       -- n'importe quel : faux
 
   définition assiette_abattement_forfaitaire_micro_services égal à
@@ -1186,8 +1186,8 @@ champ d'application BénéficesIndustrielsCommerciauxDéclarant:
   égal à
     liste de revenu_exceptionnel_ou_différé parmi revenus.professionnels.revenus_exceptionnels_ou_différés
       tel que selon revenu_exceptionnel_ou_différé.catégorie sous forme
-      -- MicroBénéficesIndustrielsCommerciauxMarchandises : faux
-      -- MicroBénéficesIndustrielsCommerciauxServices : faux
+      -- MicroBénéficesIndustrielsCommerciauxMarchandises
+      ou MicroBénéficesIndustrielsCommerciauxServices : faux
       -- n'importe quel : vrai
 
   définition
@@ -1198,9 +1198,9 @@ champ d'application BénéficesIndustrielsCommerciauxDéclarant:
       -- MicroBénéficesIndustrielsCommerciauxMarchandises : faux
       -- MicroBénéficesIndustrielsCommerciauxLocationsMeubléesHôtesClassées :
         faux
-      -- MicroBénéficesIndustrielsCommerciauxLocationsMeubléesGénéral : faux
-      -- MicroBénéficesIndustrielsCommerciauxServices : faux
-      -- MicroBénéficesIndustrielsCommerciauxLocationsMeubléesRuralesSpéciales : faux
+      -- MicroBénéficesIndustrielsCommerciauxLocationsMeubléesGénéral
+      ou MicroBénéficesIndustrielsCommerciauxServices
+      ou MicroBénéficesIndustrielsCommerciauxLocationsMeubléesRuralesSpéciales : faux
       -- n'importe quel : vrai
 ```
 
@@ -3582,9 +3582,9 @@ champ d'application BénéficesIndustrielsCommerciauxFoyerFiscal:
           tel que selon revenu_quotienté.catégorie sous forme
           # Attention on exclut de cette liste les revenus quotientés BIC
           # de location meublées qui sont traités par le 1 ter de cet article.
-          -- BénéficesIndustrielsCommerciaux : vrai
-          -- MicroBénéficesIndustrielsCommerciauxMarchandises : vrai
-          -- MicroBénéficesIndustrielsCommerciauxServices : vrai
+          -- BénéficesIndustrielsCommerciaux
+          ou MicroBénéficesIndustrielsCommerciauxMarchandises
+          ou MicroBénéficesIndustrielsCommerciauxServices : vrai
           -- n'importe quel : faux
       )
 
@@ -3679,8 +3679,8 @@ champ d'application BénéficesIndustrielsCommerciauxFoyerFiscal:
     parmi résultats_liquidation_bénéfices_industriels_commerciaux en
       liste de revenu_quotienté parmi résultat_liquidation.revenus_quotientés_non_professionnels
         tel que selon revenu_quotienté.catégorie sous forme
-        -- BénéficesIndustrielsCommerciauxLocationMeublées : vrai
-        -- MicroBénéficesIndustrielsCommerciauxLocationsMeubléesGénéral : vrai
+        -- BénéficesIndustrielsCommerciauxLocationMeublées
+        ou MicroBénéficesIndustrielsCommerciauxLocationsMeubléesGénéral : vrai
         -- MicroBénéficesIndustrielsCommerciauxLocationsMeubléesHôtesClassées :
           vrai
         -- MicroBénéficesIndustrielsCommerciauxLocationsMeubléesRuralesSpéciales :
@@ -5191,25 +5191,16 @@ sous condition année_revenus >= 2017:
   égal à
     si foyer_fiscal.nombre_enfants_à_charge_mineurs_et_non_mariés = 0 alors
       selon situation_familiale sous forme
-      -- Célibataire : 1,0
-      -- DivorcéeSéparées : 1,0
-      -- Veuve : 1,0
-      -- Mariées : 2,0
-      -- Pacsées : 2,0
+      -- Célibataire ou DivorcéeSéparées ou Veuve : 1,0
+      -- Mariées ou Pacsées : 2,0
     sinon si foyer_fiscal.nombre_enfants_à_charge_mineurs_et_non_mariés = 1 alors
       selon situation_familiale sous forme
-      -- Célibataire : 1,5
-      -- DivorcéeSéparées : 1,5
-      -- Veuve : 2,5
-      -- Mariées : 2,5
-      -- Pacsées : 2,5
+      -- Célibataire ou DivorcéeSéparées : 1,5
+      -- Veuve ou Mariées ou Pacsées : 2,5
     sinon si foyer_fiscal.nombre_enfants_à_charge_mineurs_et_non_mariés = 2 alors
       selon situation_familiale sous forme
-      -- Célibataire : 2,0
-      -- DivorcéeSéparées : 2,0
-      -- Veuve : 3,0
-      -- Mariées : 3,0
-      -- Pacsées : 3,0
+      -- Célibataire ou DivorcéeSéparées : 2,0
+      -- Veuve ou Mariées ou Pacsées : 3,0
     sinon
       # si nombre_enfants_à_charge_mineurs_et_non_mariés >= 3 alors
       selon situation_familiale sous forme
@@ -5386,9 +5377,7 @@ sous condition année_revenus >= 2021:
   sous condition
     (
       selon situation_familiale sous forme
-      -- Célibataire : vrai
-      -- DivorcéeSéparées : vrai
-      -- Veuve : vrai
+      -- Célibataire ou DivorcéeSéparées ou Veuve : vrai
       -- n'importe quel : faux
     )
     et foyer_fiscal.nombre_enfants_à_charge_mineurs_et_non_mariés = 0
@@ -5519,8 +5508,7 @@ sous condition année_revenus >= 2021:
       si
         (
           selon situation_familiale sous forme
-          -- Mariées : vrai
-          -- Pacsées : vrai
+          -- Mariées ou Pacsées : vrai
           -- n'importe quel : faux
         )
         et (
@@ -5549,8 +5537,7 @@ sous condition année_revenus >= 2021:
       si
         (
           selon situation_familiale sous forme
-          -- Mariées : vrai
-          -- Pacsées : vrai
+          -- Mariées ou Pacsées : vrai
           -- n'importe quel : faux
         )
         et (
@@ -5581,9 +5568,7 @@ sous condition année_revenus >= 2021:
       si
         (
           selon situation_familiale sous forme
-          -- Célibataire : vrai
-          -- DivorcéeSéparées : vrai
-          -- Veuve : vrai
+          -- Célibataire ou DivorcéeSéparées ou Veuve : vrai
           -- n'importe quel : faux
         )
         et (
@@ -5635,8 +5620,7 @@ sous condition année_revenus >= 2021:
   sous condition
     (
       selon situation_familiale sous forme
-      -- Mariées : vrai
-      -- Pacsées : vrai
+      -- Mariées ou Pacsées : vrai
       -- n'importe quel : faux
     )
     et (

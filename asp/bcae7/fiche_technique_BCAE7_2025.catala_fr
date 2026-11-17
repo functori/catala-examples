@@ -58,8 +58,7 @@ champ d'application ConditionnalitéBCAE7Pour2025:
   règle exempté_respect
   sous condition
     selon agriculture_biologique sous forme
-    -- CertificationObtenue : vrai
-    -- EnCoursDeConversion : vrai
+    -- CertificationObtenue ou EnCoursDeConversion : vrai
     -- Conventionnelle : faux
   conséquence rempli
 ```
@@ -1333,13 +1332,7 @@ champ d'application ConditionnalitéBCAE7Pour2025:
   règle culture_annexe_1 de code_culture
   sous condition
     selon code_culture sous forme
-    -- LOT : vrai
-    -- LDH : vrai
-    -- LDP : vrai
-    -- LUZ : vrai
-    -- VES : vrai
-    -- SAI : vrai
-    -- TRE : vrai
+    -- LOT ou LDH ou LDP ou LUZ ou VES ou SAI ou TRE : vrai
     -- n'importe quel : faux
   conséquence rempli
 ```
@@ -1355,9 +1348,7 @@ champ d'application ConditionnalitéBCAE7Pour2025:
   règle culture_annexe_1 de code_culture
   sous condition
     selon code_culture sous forme
-    -- BTN : vrai
-    -- CSA : vrai
-    -- HBL : vrai
+    -- BTN ou CSA ou HBL : vrai
     -- n'importe quel : faux
   conséquence rempli
 ```
@@ -1373,9 +1364,7 @@ champ d'application ConditionnalitéBCAE7Pour2025:
   règle culture_annexe_1 de code_culture
   sous condition
     selon code_culture sous forme
-    -- ART : vrai
-    -- CEL : vrai
-    -- FRA : vrai
+    -- ART ou CEL ou FRA : vrai
     -- n'importe quel : faux
   conséquence rempli
 ```
@@ -1389,9 +1378,7 @@ champ d'application ConditionnalitéBCAE7Pour2025:
   règle culture_annexe_1 de code_culture
   sous condition
     selon code_culture sous forme
-    -- AME : vrai
-    -- AAR : vrai
-    -- PSL : vrai
+    -- AME ou AAR ou PSL : vrai
     -- n'importe quel : faux
   conséquence rempli
 ```
@@ -1467,27 +1454,27 @@ champ d'application ConditionnalitéBCAE7Pour2025:
   règle culture_prise_en_compte_exemption_herbe_fourragères de code_culture
   sous condition
     selon code_culture sous forme
-    -- ARA : vrai
-    -- FEV : vrai
-    -- FVL : vrai
-    -- FVP : vrai
-    -- GES : vrai
-    -- LEC : vrai
-    -- LDH : vrai
-    -- LDP : vrai
-    -- LOT : vrai
-    -- PCH : vrai
-    -- PHI : vrai
-    -- PPR : vrai
-    -- PHS : vrai
-    -- PHF : vrai
-    -- LUZ : vrai
-    -- SAI : vrai
-    -- SOJ : vrai
-    -- TRE : vrai
-    -- VES : vrai
-    -- PAG : vrai
-    -- MLF : vrai
+    -- ARA
+    ou FEV
+    ou FVL
+    ou FVP
+    ou GES
+    ou LEC
+    ou LDH
+    ou LDP
+    ou LOT
+    ou PCH
+    ou PHI
+    ou PPR
+    ou PHS
+    ou PHF
+    ou LUZ
+    ou SAI
+    ou SOJ
+    ou TRE
+    ou VES
+    ou PAG
+    ou MLF : vrai
     -- n'importe quel : faux
   conséquence rempli
 ```
@@ -1504,9 +1491,7 @@ champ d'application ConditionnalitéBCAE7Pour2025:
   règle culture_prise_en_compte_exemption_herbe_fourragères de code_culture
   sous condition
     selon code_culture sous forme
-    -- MLG : vrai
-    -- PTR : vrai
-    -- JAC : vrai
+    -- MLG ou PTR ou JAC : vrai
     -- n'importe quel : faux
   conséquence rempli
 ```
@@ -1523,11 +1508,7 @@ champ d'application ConditionnalitéBCAE7Pour2025:
   règle culture_prise_en_compte_exemption_prairies_sous_eau de code_culture
   sous condition
     selon code_culture sous forme
-    -- PPH : vrai
-    -- SPH : vrai
-    -- SPL : vrai
-    -- CAE : vrai
-    -- CEE : vrai
+    -- PPH ou SPH ou SPL ou CAE ou CEE : vrai
     -- n'importe quel : faux
   conséquence rempli
 ```
@@ -1543,8 +1524,7 @@ champ d'application ConditionnalitéBCAE7Pour2025:
   règle culture_prise_en_compte_exemption_prairies_sous_eau de code_culture
   sous condition
     selon code_culture sous forme
-    -- MLG : vrai
-    -- PTR : vrai
+    -- MLG ou PTR : vrai
     -- n'importe quel : faux
   conséquence rempli
 ```
@@ -1753,26 +1733,12 @@ Triticale de printemps                                           TTP
 champ d'application ConditionnalitéBCAE7Pour2025:
   définition culture_diversification de culture égal à
     selon culture sous forme
-    -- LOT : AutresLégumineusesFourragèresYComprisEnMélange
-    -- MLF : AutresLégumineusesFourragèresYComprisEnMélange
-    -- SAI : AutresLégumineusesFourragèresYComprisEnMélange
-    -- TRE : AutresLégumineusesFourragèresYComprisEnMélange
-    -- VES : AutresLégumineusesFourragèresYComprisEnMélange
-    -- CAG : AutresCéréalesEtMélangesDePrintemps
-    -- MCS : AutresCéréalesEtMélangesDePrintemps
-    -- CAH : AutresCéréalesEtMélangesDHiver
-    -- MCR : AutresCéréalesEtMélangesDHiver
-    -- AFG : AutresFourrages
-    -- CPL : AutresFourrages
-    -- OAG : AutresOléagineuxDHiverEtDePrintemps
-    -- OHR : AutresOléagineuxDHiverEtDePrintemps
-    -- CML : AutresOléagineuxDHiverEtDePrintemps
-    -- ARA : AutresProtéagineux
-    -- PAG : AutresProtéagineux
-    -- GES : AutresProtéagineux
-    -- FNU : AutresProtéagineux
-    -- PHF : AutresProtéagineux
-    -- PHS : AutresProtéagineux
+    -- LOT ou MLF ou SAI ou TRE ou VES : AutresLégumineusesFourragèresYComprisEnMélange
+    -- CAG ou MCS : AutresCéréalesEtMélangesDePrintemps
+    -- CAH ou MCR : AutresCéréalesEtMélangesDHiver
+    -- AFG ou CPL : AutresFourrages
+    -- OAG ou OHR ou CML : AutresOléagineuxDHiverEtDePrintemps
+    -- ARA ou PAG ou GES ou FNU ou PHF ou PHS : AutresProtéagineux
     -- AVH : AvoineDHiver
     -- AVP : AvoineDePrintemps
     -- BTN : Betteraves
@@ -1783,12 +1749,9 @@ champ d'application ConditionnalitéBCAE7Pour2025:
     -- CHV : Chanvre
     -- CZH : ColzaDHiver
     -- CZP : ColzaDePrintemps
-    -- CIT : CulturesAssociéesDéclaréesAvecLeCodeCIDCIT
-    -- CID : CulturesAssociéesDéclaréesAvecLeCodeCIDCIT
+    -- CIT ou CID : CulturesAssociéesDéclaréesAvecLeCodeCIDCIT
     -- EPE : Epeautre
-    -- FEV : FèveEtFéverole
-    -- FVP : FèveEtFéverole
-    -- FVL : FèveEtFéverole
+    -- FEV ou FVP ou FVL : FèveEtFéverole
     -- AIL : Ail
     -- ANA : Ananas
     -- ART : Artichaut
@@ -1809,12 +1772,8 @@ champ d'application ConditionnalitéBCAE7Pour2025:
     -- RDI : Radis
     -- TBT : TuberculeTropical
     -- TOM : TomatesEnPleineTerre
-    -- JAC : HerbePrédominantePrairiesJachèresMélangesLégumineusesGraminées
-    -- MLG : HerbePrédominantePrairiesJachèresMélangesLégumineusesGraminées
-    -- PTR : HerbePrédominantePrairiesJachèresMélangesLégumineusesGraminées
-    -- GRA : HerbePrédominantePrairiesJachèresMélangesLégumineusesGraminées
-    -- MLC : MélangeDeLégumineusesProtéagineuxPrépondérantsEtDeCéréalesOléagineux
-    -- MPC : MélangeDeLégumineusesProtéagineuxPrépondérantsEtDeCéréalesOléagineux
+    -- JAC ou MLG ou PTR ou GRA : HerbePrédominantePrairiesJachèresMélangesLégumineusesGraminées
+    -- MLC ou MPC : MélangeDeLégumineusesProtéagineuxPrépondérantsEtDeCéréalesOléagineux
     -- LEC : Lentille
     -- LIH : LinDHiver
     -- LIP : LinDePrintemps
@@ -1822,8 +1781,7 @@ champ d'application ConditionnalitéBCAE7Pour2025:
     -- LDH : LupinDHiver
     -- LDP : LupinDePrintemps
     -- LUZ : Luzerne
-    -- MID : MaïsEtMaïsSemence
-    -- MIS : MaïsEtMaïsSemence
+    -- MID ou MIS : MaïsEtMaïsSemence
     -- MLT : Millet
     -- MOH : Moha
     -- MOT : Moutarde
@@ -1879,8 +1837,7 @@ champ d'application ConditionnalitéBCAE7Pour2025:
           -- Présent contenu culture :
             (
               selon culture.code sous forme
-              -- JAC : parcelle.surface_hectares
-              -- PTR : parcelle.surface_hectares
+              -- JAC ou PTR : parcelle.surface_hectares
               -- n'importe quel : 0,0
             )
     dans
@@ -1915,28 +1872,28 @@ champ d'application ConditionnalitéBCAE7Pour2025:
           -- Présent contenu culture :
             (
               selon culture.code sous forme
-              -- ARA : parcelle.surface_hectares
-              -- FEV : parcelle.surface_hectares
-              -- FNU : parcelle.surface_hectares
-              -- FVL : parcelle.surface_hectares
-              -- FVP : parcelle.surface_hectares
-              -- GES : parcelle.surface_hectares
-              -- LEC : parcelle.surface_hectares
-              -- LDH : parcelle.surface_hectares
-              -- LDP : parcelle.surface_hectares
-              -- LOT : parcelle.surface_hectares
-              -- PCH : parcelle.surface_hectares
-              -- PHI : parcelle.surface_hectares
-              -- PPR : parcelle.surface_hectares
-              -- PHS : parcelle.surface_hectares
-              -- PHF : parcelle.surface_hectares
-              -- LUZ : parcelle.surface_hectares
-              -- SAI : parcelle.surface_hectares
-              -- SOJ : parcelle.surface_hectares
-              -- TRE : parcelle.surface_hectares
-              -- VES : parcelle.surface_hectares
-              -- PAG : parcelle.surface_hectares
-              -- MLF : parcelle.surface_hectares
+              -- ARA
+              ou FEV
+              ou FNU
+              ou FVL
+              ou FVP
+              ou GES
+              ou LEC
+              ou LDH
+              ou LDP
+              ou LOT
+              ou PCH
+              ou PHI
+              ou PPR
+              ou PHS
+              ou PHF
+              ou LUZ
+              ou SAI
+              ou SOJ
+              ou TRE
+              ou VES
+              ou PAG
+              ou MLF : parcelle.surface_hectares
               -- n'importe quel : 0,0
             )
     dans
@@ -1970,15 +1927,15 @@ champ d'application ConditionnalitéBCAE7Pour2025:
         -- Présent contenu culture :
           (
             selon culture.code sous forme
-            -- AVH : parcelle.surface_hectares
-            -- BDH : parcelle.surface_hectares
-            -- BTH : parcelle.surface_hectares
-            -- EPE : parcelle.surface_hectares
-            -- ORH : parcelle.surface_hectares
-            -- SGH : parcelle.surface_hectares
-            -- TTH : parcelle.surface_hectares
-            -- CAH : parcelle.surface_hectares
-            -- MCR : parcelle.surface_hectares
+            -- AVH
+            ou BDH
+            ou BTH
+            ou EPE
+            ou ORH
+            ou SGH
+            ou TTH
+            ou CAH
+            ou MCR : parcelle.surface_hectares
             -- n'importe quel : 0,0
           )
 
@@ -2008,16 +1965,16 @@ champ d'application ConditionnalitéBCAE7Pour2025:
         -- Présent contenu culture :
           (
             selon culture.code sous forme
-            -- AVP : parcelle.surface_hectares
-            -- BDP : parcelle.surface_hectares
-            -- BTP : parcelle.surface_hectares
-            -- MIS : parcelle.surface_hectares
-            -- ORP : parcelle.surface_hectares
-            -- SGP : parcelle.surface_hectares
-            -- SOG : parcelle.surface_hectares
-            -- TTP : parcelle.surface_hectares
-            -- CAG : parcelle.surface_hectares
-            -- MCR : parcelle.surface_hectares
+            -- AVP
+            ou BDP
+            ou BTP
+            ou MIS
+            ou ORP
+            ou SGP
+            ou SOG
+            ou TTP
+            ou CAG
+            ou MCR : parcelle.surface_hectares
             -- n'importe quel : 0,0
           )
 
@@ -2047,8 +2004,7 @@ champ d'application ConditionnalitéBCAE7Pour2025:
         -- Présent contenu culture :
           (
             selon culture.code sous forme
-            -- BTN : parcelle.surface_hectares
-            -- PTC : parcelle.surface_hectares
+            -- BTN ou PTC : parcelle.surface_hectares
             -- n'importe quel : 0,0
           )
 
@@ -2078,9 +2034,7 @@ champ d'application ConditionnalitéBCAE7Pour2025:
         -- Présent contenu culture :
           (
             selon culture.code sous forme
-            -- CZH : parcelle.surface_hectares
-            -- MOT : parcelle.surface_hectares
-            -- OHR : parcelle.surface_hectares
+            -- CZH ou MOT ou OHR : parcelle.surface_hectares
             -- n'importe quel : 0,0
           )
 
@@ -2110,10 +2064,7 @@ champ d'application ConditionnalitéBCAE7Pour2025:
         -- Présent contenu culture :
           (
             selon culture.code sous forme
-            -- CML : parcelle.surface_hectares
-            -- CZP : parcelle.surface_hectares
-            -- TRN : parcelle.surface_hectares
-            -- OAG : parcelle.surface_hectares
+            -- CML ou CZP ou TRN ou OAG : parcelle.surface_hectares
             -- n'importe quel : 0,0
           )
 
@@ -2204,15 +2155,15 @@ champ d'application ConditionnalitéBCAE7Pour2025:
           -- Présent contenu culture :
             (
               selon culture.code sous forme
-              -- HBL : parcelle.surface_hectares
-              -- FLP : parcelle.surface_hectares
-              -- ARP : parcelle.surface_hectares
-              -- PRF : parcelle.surface_hectares
-              -- LAV : parcelle.surface_hectares
-              -- PME : parcelle.surface_hectares
-              -- MSW : parcelle.surface_hectares
-              -- ACP : parcelle.surface_hectares
-              -- PEV : parcelle.surface_hectares
+              -- HBL
+              ou FLP
+              ou ARP
+              ou PRF
+              ou LAV
+              ou PME
+              ou MSW
+              ou ACP
+              ou PEV : parcelle.surface_hectares
               -- n'importe quel : 0,0
             )
     dans

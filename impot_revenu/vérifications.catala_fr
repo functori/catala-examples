@@ -55,8 +55,7 @@ champ d'application NombreDeParts:
     non (
       foyer_fiscal.pensionné_veuve_de_guerre
       et selon situation_familiale sous forme
-        -- Mariées : vrai
-        -- Pacsées : vrai
+        -- Mariées ou Pacsées : vrai
         -- n'importe quel : faux
     )
 # TODO juridique : faut-il exiger que la case "veuve" soit cochée et interdire
@@ -87,9 +86,7 @@ champ d'application NombreDeParts:
   assertion (
     si foyer_fiscal.célibataire_divorcé_veuf_sans_enfant alors
       selon situation_familiale sous forme
-      -- DivorcéeSéparées : vrai
-      -- Célibataire : vrai
-      -- Veuve : vrai
+      -- DivorcéeSéparées ou Célibataire ou Veuve : vrai
       -- n'importe quel : faux
     sinon vrai
   )
@@ -125,9 +122,7 @@ champ d'application NombreDeParts:
   assertion (
     si foyer_fiscal.pensionné_guerre_célibataire_veuf alors
       selon situation_familiale sous forme
-      -- DivorcéeSéparées : vrai
-      -- Célibataire : vrai
-      -- Veuve : vrai
+      -- DivorcéeSéparées ou Célibataire ou Veuve : vrai
       -- n'importe quel : faux
     sinon vrai
   )
@@ -143,8 +138,7 @@ champ d'application NombreDeParts:
   assertion (
     si foyer_fiscal.pensionné_guerre_marié_pacsé alors
       selon situation_familiale sous forme
-      -- Mariées : vrai
-      -- Pacsées : vrai
+      -- Mariées ou Pacsées : vrai
       -- n'importe quel : faux
     sinon vrai
   )
@@ -170,8 +164,7 @@ champ d'application NombreDeParts:
   assertion (
     si foyer_fiscal.parent_isolé alors
       selon situation_familiale sous forme
-      -- DivorcéeSéparées : vrai
-      -- Célibataire : vrai
+      -- DivorcéeSéparées ou Célibataire : vrai
       -- n'importe quel : faux
     sinon vrai
   )
@@ -200,8 +193,7 @@ champ d'application TraitementsSalairesDéclarant:
     pour tout revenu_exceptionnel_ou_différé
     parmi revenus.revenus_exceptionnels_ou_différés
       on a selon revenu_exceptionnel_ou_différé.catégorie sous forme
-      -- CatégorieRevenuExceptionnelOuDifféré.PensionsRetraitesRentes : vrai
-      -- TraitementsSalaires : vrai
+      -- CatégorieRevenuExceptionnelOuDifféré.PensionsRetraitesRentes ou TraitementsSalaires : vrai
       -- n'importe quel : faux
 
 champ d'application TraitementsSalairesFoyerFiscal:

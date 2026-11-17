@@ -1017,9 +1017,7 @@ champ d'application ÉligibilitéAidesPersonnelleLogement:
     (
       selon ménage.situation_familiale sous forme
       -- Célibataire : 1
-      -- Mariés : 2
-      -- Pacsés : 2
-      -- Concubins : 2
+      -- Mariés ou Pacsés ou Concubins : 2
       -- CélibataireSéparéDeFait : 1
       -- ConcubinageDontSéparéDeFait : 2
     )
@@ -1033,9 +1031,7 @@ champ d'application ÉligibilitéAidesPersonnelleLogement:
       (
         selon ménage.situation_familiale sous forme
         -- Célibataire : 9
-        -- Mariés : 16
-        -- Pacsés : 16
-        -- Concubins : 16
+        -- Mariés ou Pacsés ou Concubins : 16
         -- CélibataireSéparéDeFait : 9
         -- ConcubinageDontSéparéDeFait : 16
       )
@@ -2426,10 +2422,8 @@ champ d'application ImpayéDépenseLogement:
   définition mode_occupation_impayé égal à
     selon mode_occupation sous forme
     -- Locataire : ImpayéLoyer
-    -- AccessionPropriétéLocalUsageExclusifHabitation : ImpayéPrêt
-    -- RésidentLogementFoyer : ImpayéPrêt
-    -- LocationAccession : ImpayéLoyer
-    -- SousLocataire : ImpayéLoyer
+    -- AccessionPropriétéLocalUsageExclusifHabitation ou RésidentLogementFoyer : ImpayéPrêt
+    -- LocationAccession ou SousLocataire : ImpayéLoyer
 ```
 
 ###### Section 2 : Secteur locatif
@@ -5620,9 +5614,7 @@ champ d'application ÉligibilitéAidesPersonnelleLogement:
       (
         selon ménage.situation_familiale sous forme
         -- Célibataire : 9
-        -- Mariés : 13
-        -- Pacsés : 13
-        -- Concubins : 13
+        -- Mariés ou Pacsés ou Concubins : 13
         -- CélibataireSéparéDeFait : 9
         -- ConcubinageDontSéparéDeFait : 13
       )
@@ -5788,11 +5780,7 @@ sous condition date_courante >= |2023-04-05|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
+      -- Guadeloupe ou Guyane ou Martinique ou LaRéunion ou Mayotte : vrai
       -- n'importe quel : faux
     )
     et opérations_logement_évolutifs_sociaux_accession_propriété_aidée_État
@@ -5850,11 +5838,7 @@ sous condition date_courante >= |2019-09-01| et date_courante < |2023-04-05|:
   règle calcul_apl_logement_foyer.limitation_majoration_personnes_à_charge
   sous condition
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
+    -- Guadeloupe ou Guyane ou Martinique ou LaRéunion ou Mayotte : vrai
     -- n'importe quel : faux
   conséquence rempli
 ```
@@ -5871,11 +5855,7 @@ sous condition date_courante >= |2019-09-01| et date_courante < |2023-04-05|:
   sous condition
     (
       selon résidence sous forme
-      -- Guadeloupe : vrai
-      -- Guyane : vrai
-      -- Martinique : vrai
-      -- LaRéunion : vrai
-      -- Mayotte : vrai
+      -- Guadeloupe ou Guyane ou Martinique ou LaRéunion ou Mayotte : vrai
       -- n'importe quel : faux
     )
     et opérations_logement_évolutifs_sociaux_accession_propriété_aidée_État
@@ -5899,11 +5879,7 @@ sous condition date_courante >= |2019-09-01| et date_courante < |2023-04-05|:
   règle calcul_apl_logement_foyer.limitation_majoration_personnes_à_charge
   sous condition
     selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
+    -- Guadeloupe ou Guyane ou Martinique ou LaRéunion ou Mayotte : vrai
     -- n'importe quel : faux
   conséquence rempli
 ```
@@ -5932,11 +5908,7 @@ champ d'application ÉligibilitéAidesPersonnelleLogement:
   définition prestations_familiales.âge_l512_3_2
   sous condition (
     selon ménage.résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
+    -- Guadeloupe ou Guyane ou Martinique ou LaRéunion ou Mayotte : vrai
     -- n'importe quel : faux
   )
   conséquence égal à
@@ -6002,11 +5974,7 @@ champ d'application ÉligibilitéAidePersonnaliséeLogement
 sous condition
   date_courante >= |2023-04-05|
   et selon ménage.résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
+    -- Guadeloupe ou Guyane ou Martinique ou LaRéunion ou Mayotte : vrai
     -- n'importe quel : faux:
   exception logement_foyer
   règle condition_logement_bailleur
@@ -6068,11 +6036,7 @@ champ d'application CalculAidePersonnaliséeLogementFoyer
 sous condition
   date_courante >= |2023-04-05|
   et selon résidence sous forme
-    -- Guadeloupe : vrai
-    -- Guyane : vrai
-    -- Martinique : vrai
-    -- LaRéunion : vrai
-    -- Mayotte : vrai
+    -- Guadeloupe ou Guyane ou Martinique ou LaRéunion ou Mayotte : vrai
     -- n'importe quel : faux:
   exception
   définition condition_2_du_832_25 égal à
@@ -6154,8 +6118,7 @@ sous condition date_courante >= date_entrée_vigueur_différée_cch:
   définition prestations_familiales.âge_l512_3_2
   sous condition
     selon ménage.résidence sous forme
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- SaintBarthélemy ou SaintMartin : vrai
     -- n'importe quel : faux
   conséquence égal à
     22 an
@@ -6355,8 +6318,7 @@ sous condition date_courante >= |2023-04-05|:
   sous condition
     (
       selon résidence sous forme
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- SaintBarthélemy ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et opérations_logement_évolutifs_sociaux_accession_propriété_aidée_État
@@ -6389,8 +6351,7 @@ sous condition date_courante >= |2019-09-01| et date_courante < |2023-04-05|:
   règle calcul_apl_logement_foyer.limitation_majoration_personnes_à_charge
   sous condition
     selon résidence sous forme
-    -- SaintBarthélemy : vrai
-    -- SaintMartin : vrai
+    -- SaintBarthélemy ou SaintMartin : vrai
     -- n'importe quel : faux
   conséquence rempli
 ```
@@ -6407,8 +6368,7 @@ sous condition date_courante >= |2019-09-01| et date_courante < |2023-04-05|:
   sous condition
     (
       selon résidence sous forme
-      -- SaintBarthélemy : vrai
-      -- SaintMartin : vrai
+      -- SaintBarthélemy ou SaintMartin : vrai
       -- n'importe quel : faux
     )
     et opérations_logement_évolutifs_sociaux_accession_propriété_aidée_État

@@ -149,12 +149,10 @@ champ d'application ÉligibilitéAidesPersonnelleLogement:
   règle condition_logement_mode_occupation
   sous condition
     selon ménage.logement.mode_occupation sous forme
-    -- Locataire : vrai
-    -- RésidentLogementFoyer : vrai
+    -- Locataire ou RésidentLogementFoyer : vrai
     -- AccessionPropriétéLocalUsageExclusifHabitation :
       ménage.logement.résidence_principale
-    -- SousLocataire : vrai
-    -- LocationAccession : vrai
+    -- SousLocataire ou LocationAccession : vrai
   # Justifié par L831-2, avec une
   # exception à venir
   conséquence rempli
@@ -1136,8 +1134,8 @@ champ d'application CalculetteAidesAuLogement:
     ou (
       selon éligibilité_allocation_logement.éligibilité sous forme
       -- PasÉligible : faux
-      -- TypeÉligibilitéAllocationLogement.AllocationLogementFamiliale : vrai
-      -- TypeÉligibilitéAllocationLogement.AllocationLogementSociale : vrai
+      -- TypeÉligibilitéAllocationLogement.AllocationLogementFamiliale
+      ou TypeÉligibilitéAllocationLogement.AllocationLogementSociale : vrai
     )
 
   # Pour chaque calcul d'aide potentielle à donner, on suppose que c'est
@@ -1471,11 +1469,7 @@ conditions sont fixées par voie réglementaire ;”.
 champ d'application ÉligibilitéAidePersonnaliséeLogement
 sous condition (
   selon ménage.résidence sous forme
-  -- Guadeloupe : vrai
-  -- Guyane : vrai
-  -- Martinique : vrai
-  -- LaRéunion : vrai
-  -- Mayotte : vrai
+  -- Guadeloupe ou Guyane ou Martinique ou LaRéunion ou Mayotte : vrai
   -- n'importe quel : faux
 ):
   étiquette logement_foyer
@@ -1504,11 +1498,7 @@ a) Les 1°, 2° et 6° sont supprimés et les 3°, 4° et 5° deviennent les 1°
 champ d'application ÉligibilitéAllocationLogement
 sous condition (
   selon ménage.résidence sous forme
-  -- Guadeloupe : vrai
-  -- Guyane : vrai
-  -- Martinique : vrai
-  -- LaRéunion : vrai
-  -- Mayotte : vrai
+  -- Guadeloupe ou Guyane ou Martinique ou LaRéunion ou Mayotte : vrai
   -- n'importe quel : faux
 ):
 
@@ -1545,11 +1535,7 @@ L. 512-3 du code de la sécurité sociale ;
 champ d'application ÉligibilitéAllocationLogement
 sous condition (
   selon ménage.résidence sous forme
-  -- Guadeloupe : vrai
-  -- Guyane : vrai
-  -- Martinique : vrai
-  -- LaRéunion : vrai
-  -- Mayotte : vrai
+  -- Guadeloupe ou Guyane ou Martinique ou LaRéunion ou Mayotte : vrai
   -- n'importe quel : faux
 ):
 
@@ -1586,11 +1572,7 @@ et de la pêche maritime ;
 champ d'application ÉligibilitéAllocationLogement
 sous condition (
   selon ménage.résidence sous forme
-  -- Guadeloupe : vrai
-  -- Guyane : vrai
-  -- Martinique : vrai
-  -- LaRéunion : vrai
-  -- Mayotte : vrai
+  -- Guadeloupe ou Guyane ou Martinique ou LaRéunion ou Mayotte : vrai
   -- n'importe quel : faux
 ):
 
@@ -1633,11 +1615,7 @@ l'impossibilité constatée de se livrer à une activité professionnelle. " ;
 champ d'application ÉligibilitéAidesPersonnelleLogement
 sous condition (
   selon ménage.résidence sous forme
-  -- Guadeloupe : vrai
-  -- Guyane : vrai
-  -- Martinique : vrai
-  -- LaRéunion : vrai
-  -- Mayotte : vrai
+  -- Guadeloupe ou Guyane ou Martinique ou LaRéunion ou Mayotte : vrai
   -- n'importe quel : faux
 ):
 
@@ -1669,11 +1647,7 @@ Mayotte. "
 champ d'application ÉligibilitéAllocationLogement
 sous condition (
   selon ménage.résidence sous forme
-  -- Guadeloupe : vrai
-  -- Guyane : vrai
-  -- Martinique : vrai
-  -- LaRéunion : vrai
-  -- Mayotte : vrai
+  -- Guadeloupe ou Guyane ou Martinique ou LaRéunion ou Mayotte : vrai
   -- n'importe quel : faux
 ):
   étiquette accession_propriété_outre_mer exception accession_propriété
@@ -1837,8 +1811,7 @@ les 1°, 2° et 3° ;
 champ d'application ÉligibilitéAllocationLogement
 sous condition (
   selon ménage.résidence sous forme
-  -- SaintBarthélemy : vrai
-  -- SaintMartin : vrai
+  -- SaintBarthélemy ou SaintMartin : vrai
   -- n'importe quel : faux
 ):
 
@@ -1862,8 +1835,7 @@ L. 512-3 du code de la sécurité sociale ;
 champ d'application ÉligibilitéAllocationLogement
 sous condition (
   selon ménage.résidence sous forme
-  -- SaintBarthélemy : vrai
-  -- SaintMartin : vrai
+  -- SaintBarthélemy ou SaintMartin : vrai
   -- n'importe quel : faux
 ):
 
@@ -1900,8 +1872,7 @@ de la pêche maritime.
 champ d'application ÉligibilitéAllocationLogement
 sous condition (
   selon ménage.résidence sous forme
-  -- SaintBarthélemy : vrai
-  -- SaintMartin : vrai
+  -- SaintBarthélemy ou SaintMartin : vrai
   -- n'importe quel : faux
 ):
 
@@ -1927,8 +1898,7 @@ constatée de se livrer à une activité professionnelle. " ;
 champ d'application ÉligibilitéAidesPersonnelleLogement
 sous condition (
   selon ménage.résidence sous forme
-  -- SaintBarthélemy : vrai
-  -- SaintMartin : vrai
+  -- SaintBarthélemy ou SaintMartin : vrai
   -- n'importe quel : faux
 ):
 
